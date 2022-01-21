@@ -1,7 +1,7 @@
 package Multithreading;
 import java.io.*; 
 import java.util.*; 
-class ThreadSynchronisation
+class ThreadSynchronisation1
 { 
     public void send(String msg) 
     { 
@@ -22,7 +22,7 @@ class ThreadSynchronisation extends Thread
     private String msg; 
     private Thread t; 
     Sender  sender; 
-    ThreadedSend(String m,  Sender obj) 
+    void ThreadedSend(String m,  Sender obj) 
     { 
         msg = m; 
         sender = obj; 
